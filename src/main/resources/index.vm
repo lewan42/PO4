@@ -1,0 +1,12 @@
+package $packageName
+
+class $className  {
+
+  #foreach ($item in $list)
+  $item.getType().getSelectionModel().getSelectedItem() $item.getName().getText()
+  #end
+
+    static constraints = {
+    }
+}
+

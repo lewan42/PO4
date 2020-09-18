@@ -1,0 +1,74 @@
+.frame-title {
+    -fx-fill: rgb(55, 113, 241);
+    -fx-arc-height: 50%;
+    -fx-arc-width: 50%;
+    -fx-stroke-width: 1;
+    -fx-stroke: black;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.65), 10, 0, 0, 0);
+}
+
+.frame-title[type="text"] {
+
+    font-style: bold;
+}
+
+.frame-body {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.65), 10, 0, 0, 0);
+    -fx-fill: ghostwhite;
+    -fx-stroke-width: 1;
+    -fx-stroke: black;
+}
+
+.type-attribute-data {
+    -fx-max-width: 110;
+}
+
+
+
+/*.attribute-link {*/
+/*    -fx-padding: 3;*/
+/*    -fx-border-color: black;*/
+/*    -fx-border-insets: 5;*/
+/*    -fx-border-width: 1;*/
+/*    -fx-border-style: solid;*/
+/*}*/
+
+.attribute-data {
+    -fx-padding: 3;
+    -fx-border-color: black;
+    -fx-border-insets: 5;
+    -fx-border-width: 1;
+    -fx-border-style: solid none solid none;
+}
+
+
+.name-attribute-data {
+    -fx-max-width: 60;
+}
+
+.name-attribute-data, .name-table, .type-attribute-data {
+    -fx-background-color: none;
+}
+
+.name-table {
+    -fx-font-size: 14;
+    -fx-pref-width: 125;
+    -fx-alignment: center;
+    /*-fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;*/
+}
+
+.name-table > {
+    -fx-fill: linear-gradient(from 0% 0% to 100% 200%, repeat, aqua 0%, red 50%);
+    -fx-stroke: black;
+    -fx-stroke-width: 1;
+}
+
+.name-table:focused, .name-attribute-data:focused {
+
+    -fx-background-color: #a9a9a9, white, white;
+    /*-fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;*/
+}
+
+.btn-add-attr, .btn-del-attr{
+    -fx-background-color: none;
+}
